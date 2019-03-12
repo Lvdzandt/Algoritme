@@ -8,3 +8,13 @@ C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTrein\obj\Debug\Ci
 C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTrein\obj\Debug\CircusTrein.exe
 C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTrein\obj\Debug\CircusTrein.pdb
 C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTrein\obj\Debug\CircusTrein.Form1.resources
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\bin\Debug\CircusTrein.exe.config
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\bin\Debug\CircusTrein.exe
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\bin\Debug\CircusTrein.pdb
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.csprojAssemblyReference.cache
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.Form1.resources
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.Properties.Resources.resources
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.csproj.GenerateResource.cache
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.csproj.CoreCompileInputs.cache
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.exe
+C:\Users\Luc\Desktop\git\Algoritme\CircusTrein\obj\Debug\CircusTrein.pdb
