@@ -13,7 +13,7 @@ namespace CircusTrein
     public partial class Form1 : Form
     {
         List<Animal> AllAnimals = new List<Animal>();
-        List<TrainWagon> Train = new List<TrainWagon>();
+        
         public static Random RNGenum = new Random();
         public static Random RNGmeat = new Random();
         public Form1()
@@ -22,22 +22,17 @@ namespace CircusTrein
             for (int i = 1; i < 11; i++)
             {
                 AllAnimals.Add(new Animal(i, RNGenum.Next(1,4) ,RNGmeat.Next(1,3)));
+                listBox3.Items.Add(i);
             }
-            foreach (var item in AllAnimals)
-            {
-                listBox3.Items.Add(item.ID);
-            }
-            OrderTrain(AllAnimals);
-            foreach (var item in Train)
+            Train Train = new Train(AllAnimals);
+            Train.OrderWagon();
+            foreach (var item in Train.Wagons)
             {
                 listBox1.Items.Add(item.ID);
             }
         }
 
-        private void OrderTrain(List<Animal> animals)
-        {
-
-        }
+        
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
