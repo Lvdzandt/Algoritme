@@ -11,7 +11,7 @@ namespace CircusTrein
         public int ID { get; set; }
         private int MaxSize { get; set; } = 10;
         public int CurrSize { get; set; } = 0;
-        public List<Animal> Animals { get; set; }
+        public List<Animal> Animals = new List<Animal>();
 
         public TrainWagon(int _id)
         {
@@ -23,13 +23,16 @@ namespace CircusTrein
             ID = _id;
             Animals = new List<Animal>();
             Animals.Add(_animal);
+            int AnimalSize = (int)_animal.Size;
+            CurrSize = AnimalSize;
         }
 
         public bool CheckRemainingSize(Animal animal)
         {
-            if (CurrSize  + (int)animal.Size >= 10)
+            int animalsize = (int)animal.Size;
+            if (CurrSize  + animalsize <= MaxSize)
             {
-                CurrSize += (int)animal.Size;
+                CurrSize += animalsize;
                 return true;
             }
             else
@@ -40,7 +43,23 @@ namespace CircusTrein
 
         public bool CheckMeatEater(Animal animal)
         {
-
+            int ASize = (int)animal.Size;
+            foreach (Animal a in Animals)
+            {
+                int BSize = (int)a.Size;
+                if (a.MeatEater && animal.MeatEater)
+                {
+                    return false;
+                }
+                if (!a.MeatEater && animal.MeatEater && ASize < BSize)
+                {
+                    return true;
+                }
+                else if (a.MeatEater && !animal.MeatEater && ASize > BSize)
+                {
+                    return true;
+                }
+            }
             return true;
         }
 

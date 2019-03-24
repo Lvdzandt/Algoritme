@@ -21,20 +21,33 @@ namespace CircusTrein
 
         public void OrderWagon()
         {
+            bool AddedAnimal = false;
+            int i = 1;
             foreach (Animal a in Animals)
             {
-                foreach (TrainWagon w in Wagons)
+                while (!AddedAnimal)
                 {
-                    if (w.CheckRemainingSize(a) && w.CheckMeatEater(a))
+                    foreach (TrainWagon w in Wagons)
                     {
-                        w.Animals.Add(a);
+                        if (w.CheckRemainingSize(a) && w.CheckMeatEater(a))
+                        {
+                            w.Animals.Add(a);
+                            AddedAnimal = true;
+                            break;
+                        }
+
                     }
-                    else if(!w.CheckRemainingSize(a))
+                    if (!AddedAnimal)
                     {
-                        //Wagons.Add(new TrainWagon(w.ID+1,a));
+                        Wagons.Add(new TrainWagon(i + 1, a));
+                        i += 1;
+                        AddedAnimal = true;
                     }
+                    
+                }
+                AddedAnimal = false;
                 }
             }
         }
     }
-}
+

@@ -13,18 +13,18 @@ namespace CircusTrein
     public partial class Form1 : Form
     {
         List<Animal> AllAnimals = new List<Animal>();
-        
+        Train Train;
         public static Random RNGenum = new Random();
         public static Random RNGmeat = new Random();
         public Form1()
         {
             InitializeComponent();
-            for (int i = 1; i < 11; i++)
+            for (int i = 1; i < 21; i++)
             {
                 AllAnimals.Add(new Animal(i, RNGenum.Next(1,4) ,RNGmeat.Next(1,3)));
                 listBox3.Items.Add(i);
             }
-            Train Train = new Train(AllAnimals);
+            Train = new Train(AllAnimals);
             Train.OrderWagon();
             foreach (var item in Train.Wagons)
             {
@@ -36,7 +36,17 @@ namespace CircusTrein
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            listBox2.Items.Clear();
+            foreach (var item in Train.Wagons)
+            {
+                if (item.ID == Convert.ToInt32(listBox2.GetItemText(listBox1.SelectedItem)))
+                {
+                    foreach (Animal animal in item.Animals)
+                    {
+                        listBox2.Items.Add(animal.ID);
+                    }
+                }
+            }
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -69,6 +79,8 @@ namespace CircusTrein
 
         }
 
+        
+
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             foreach (var item in AllAnimals)
@@ -81,6 +93,24 @@ namespace CircusTrein
                 }
             }
             
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var item in AllAnimals)
+            {
+                if (item.ID == Convert.ToInt32(listBox2.GetItemText(listBox2.SelectedItem)))
+                {
+                    AnimalID.Text = Convert.ToString(item.ID);
+                    AnimalSize.Text = Convert.ToString(item.Size);
+                    AnimalMeatEater.Text = Convert.ToString(item.MeatEater);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Train.OrderWagon();
         }
     }
 }
