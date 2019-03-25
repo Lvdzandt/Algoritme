@@ -12,41 +12,65 @@ namespace CircusTrein
 {
     public partial class Form1 : Form
     {
-        List<Animal> AllAnimals = new List<Animal>();
         Train Train;
-        public static Random RNGenum = new Random();
-        public static Random RNGmeat = new Random();
+        
         public Form1()
         {
             InitializeComponent();
-            for (int i = 1; i < 21; i++)
-            {
-                AllAnimals.Add(new Animal(i, RNGenum.Next(1,4) ,RNGmeat.Next(1,3)));
-                listBox3.Items.Add(i);
-            }
-            Train = new Train(AllAnimals);
+
+            Train = new Train();
             Train.OrderWagon();
-            foreach (var item in Train.Wagons)
-            {
-                listBox1.Items.Add(item.ID);
-            }
+            Train.AddWagons(listBox1);
+            Train.AllAnimals(listBox3);
+            
         }
 
-        
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listBox2.Items.Clear();
-            foreach (var item in Train.Wagons)
+            if (!int.TryParse(listBox1.GetItemText(listBox1.SelectedItem), out int id))
             {
-                if (item.ID == Convert.ToInt32(listBox2.GetItemText(listBox1.SelectedItem)))
-                {
-                    foreach (Animal animal in item.Animals)
-                    {
-                        listBox2.Items.Add(animal.ID);
-                    }
-                }
+                Console.WriteLine("{0} is not an integer", id);
             }
+            else
+            {
+                id = Convert.ToInt32(listBox1.GetItemText(listBox1.SelectedItem));
+            }
+
+            Train.AddWagonAnimal(listBox2, id);
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!int.TryParse(listBox3.GetItemText(listBox3.SelectedItem), out int id))
+            {
+                Console.WriteLine("{0} is not an integer", id);
+            }
+            else
+            {
+                id = Convert.ToInt32(listBox3.GetItemText(listBox3.SelectedItem));
+            }
+            Train.AnimalInfo(listBox3, AnimalID, AnimalSize, AnimalMeatEater, id);
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!int.TryParse(listBox2.GetItemText(listBox2.SelectedItem), out int id))
+            {
+                Console.WriteLine("{0} is not an integer", id);
+            }
+            else
+            {
+                id = Convert.ToInt32(listBox2.GetItemText(listBox2.SelectedItem));
+            }
+            Train.AnimalInfo(listBox2, AnimalID, AnimalSize, AnimalMeatEater, id);
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Train.OrderWagon();
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -77,40 +101,6 @@ namespace CircusTrein
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            foreach (var item in AllAnimals)
-            {
-                if (item.ID == Convert.ToInt32(listBox3.GetItemText(listBox3.SelectedItem)))
-                {
-                    AnimalID.Text = Convert.ToString(item.ID);
-                    AnimalSize.Text = Convert.ToString(item.Size);
-                    AnimalMeatEater.Text = Convert.ToString(item.MeatEater);
-                }
-            }
-            
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            foreach (var item in AllAnimals)
-            {
-                if (item.ID == Convert.ToInt32(listBox2.GetItemText(listBox2.SelectedItem)))
-                {
-                    AnimalID.Text = Convert.ToString(item.ID);
-                    AnimalSize.Text = Convert.ToString(item.Size);
-                    AnimalMeatEater.Text = Convert.ToString(item.MeatEater);
-                }
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Train.OrderWagon();
         }
     }
 }

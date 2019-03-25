@@ -44,20 +44,27 @@ namespace CircusTrein
         public bool CheckMeatEater(Animal animal)
         {
             int ASize = (int)animal.Size;
-            foreach (Animal a in Animals)
+            if (Animals.Count == 0)
             {
-                int BSize = (int)a.Size;
-                if (a.MeatEater && animal.MeatEater)
+                return true;
+            }
+            else
+            {
+                foreach (Animal a in Animals)
                 {
-                    return false;
-                }
-                if (!a.MeatEater && animal.MeatEater && ASize < BSize)
-                {
-                    return true;
-                }
-                else if (a.MeatEater && !animal.MeatEater && ASize > BSize)
-                {
-                    return true;
+                    int BSize = (int)a.Size;
+                    if (a.MeatEater && animal.MeatEater)
+                    {
+                        return false;
+                    }
+                    else if (!a.MeatEater && animal.MeatEater && ASize >= BSize)
+                    {
+                        return false;
+                    }
+                    else if (a.MeatEater && !animal.MeatEater && ASize <= BSize)
+                    {
+                        return false;
+                    }
                 }
             }
             return true;
