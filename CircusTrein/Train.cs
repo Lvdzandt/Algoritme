@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace CircusTrein
 {
-    class Train
+    public class Train
     {
         public List<TrainWagon> Wagons { get; set; }
         public List<Animal> Animals { get; set; }
@@ -17,7 +17,6 @@ namespace CircusTrein
         public Train()
         {
             Animals = new List<Animal>();
-            MakeAnimals();
             Wagons = new List<TrainWagon>();
             TrainWagon firstwagon = new TrainWagon(1);
             Wagons.Add(firstwagon);

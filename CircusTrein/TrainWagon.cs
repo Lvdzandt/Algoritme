@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CircusTrein
 {
-    class TrainWagon
+   public class TrainWagon
     {
         public int ID { get; set; }
         private int MaxSize { get; set; } = 10;

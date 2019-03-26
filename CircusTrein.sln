@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTrein", "CircusTrein\CircusTrein.csproj", "{BDE5EEE9-F435-4572-9648-9623F70F162C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTreinTests3", "CircusTreinTests3\CircusTreinTests3.csproj", "{0DA71FFC-751E-4427-918B-A8FBEE3CF369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BDE5EEE9-F435-4572-9648-9623F70F162C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDE5EEE9-F435-4572-9648-9623F70F162C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDE5EEE9-F435-4572-9648-9623F70F162C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA71FFC-751E-4427-918B-A8FBEE3CF369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA71FFC-751E-4427-918B-A8FBEE3CF369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA71FFC-751E-4427-918B-A8FBEE3CF369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA71FFC-751E-4427-918B-A8FBEE3CF369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

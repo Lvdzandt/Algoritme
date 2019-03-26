@@ -1,0 +1,7 @@
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\b\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\b\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\b\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\b\CircusTreinTests3\bin\Debug\CircusTreinTests3.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\i\CircusTreinTests3\Debug\CircusTreinTests3.csproj.CoreCompileInputs.cache
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\i\CircusTreinTests3\Debug\CircusTreinTests3.csproj.CopyComplete
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\.vs\CircusTrein\lut\0\i\CircusTreinTests3\Debug\CircusTreinTests3.dll

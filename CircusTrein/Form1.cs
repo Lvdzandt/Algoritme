@@ -12,13 +12,14 @@ namespace CircusTrein
 {
     public partial class Form1 : Form
     {
-        Train Train;
+        public Train Train;
         
         public Form1()
         {
             InitializeComponent();
 
             Train = new Train();
+            Train.MakeAnimals();
             Train.OrderWagon();
             Train.AddWagons(listBox1);
             Train.AllAnimals(listBox3);

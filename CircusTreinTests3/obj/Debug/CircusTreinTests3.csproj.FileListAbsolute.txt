@@ -1,0 +1,17 @@
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\CircusTreinTests3.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\CircusTreinTests3.pdb
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\CircusTrein.exe
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\CircusTrein.pdb
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\CircusTrein.exe.config
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\obj\Debug\CircusTreinTests3.csprojAssemblyReference.cache
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\obj\Debug\CircusTreinTests3.csproj.CoreCompileInputs.cache
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\obj\Debug\CircusTreinTests3.csproj.CopyComplete
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\obj\Debug\CircusTreinTests3.dll
+C:\Users\lucvd\Desktop\ICT\S2 Her\Algoritme\CircusTrein\CircusTreinTests3\obj\Debug\CircusTreinTests3.pdb
