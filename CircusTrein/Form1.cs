@@ -22,7 +22,11 @@ namespace CircusTrein
             Train.OrderWagon();
             Train.AddWagons(listBox1);
             Train.AllAnimals(listBox3);
-            
+            SizeBox.Items.Add(Animal.AnimalSize.small);
+            SizeBox.Items.Add(Animal.AnimalSize.medium);
+            SizeBox.Items.Add(Animal.AnimalSize.big);
+            MeatEaterBox.Items.Add(true);
+            MeatEaterBox.Items.Add(false);
         }
 
 
@@ -99,6 +103,25 @@ namespace CircusTrein
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int id = Train.Animals.Count + 1;
+            Animal.AnimalSize sizeget = (Animal.AnimalSize)Enum.Parse(typeof(Animal.AnimalSize), SizeBox.Text);
+            bool Meateater = Convert.ToBoolean(MeatEaterBox.Text);
+            Train.Animals.Add(new Animal(Train.Animals.Count+1,sizeget,Meateater));
+            listBox3.Items.Add(id);
+            Train.OrderWagon();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            Train.AddWagons(listBox1);
+            
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

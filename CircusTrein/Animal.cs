@@ -37,6 +37,13 @@ namespace CircusTrein
             }
         }
 
+        public Animal(int _id, AnimalSize _size, bool _meateater)
+        {
+            ID = _id;
+            MeatEater = _meateater;
+            Size = _size;
+        }
+
 
         public enum AnimalSize
         {

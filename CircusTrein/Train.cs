@@ -69,7 +69,7 @@ namespace CircusTrein
         public void MakeAnimals()
         {
             
-            for (int i = 1; i < 21; i++)
+            for (int i = 1; i < 51; i++)
             {
                 Animals.Add(new Animal(i, RNGenum.Next(1, 4), RNGmeat.Next(1, 3)));
             }
@@ -77,8 +77,9 @@ namespace CircusTrein
 
         public void OrderWagon()
         {
+            Wagons.Clear();
             bool AddedAnimal = false;
-            int i = 1;
+            int i = 0;
             foreach (Animal a in Animals)
             {
                 while (!AddedAnimal)
